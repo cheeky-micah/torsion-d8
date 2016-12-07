@@ -1,0 +1,18 @@
+/**
+ * @file    : _primary-menu.scss
+ * @purpose : css for primary menu component
+ */
+#block-primarymenu {
+  clear: both;
+
+  ul.menu {
+    @include menu-base;
+    @include menu-direction(vertical);
+  }
+
+  @include breakpoint(large) {
+    ul.menu {
+      @include menu-direction(horizontal); 
+    }
+  }
+}

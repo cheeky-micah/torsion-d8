@@ -1,0 +1,15 @@
+/**
+ * @file    : _drupal.scss
+ * @purpose : drupal specific overrides and styling
+ */
+
+/**
+ * drupal status messages 
+ */
+div.Status {
+  border: 1px solid $vibrant-blue-color;
+  padding: rem-calc(10);
+  background: $light-gray;
+  margin-bottom: rem-calc(20);
+}
+

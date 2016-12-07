@@ -1,0 +1,71 @@
+/**
+ * @file    : _nav-buttons.scss
+ * @purpose : css for nav buttons
+ */
+
+/*
+ * mobile navigation close button
+ */
+.mobile-nav-close {
+  float: right;
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  
+  &:hover {
+    &::before,
+    &::after {
+      background: $vibrant-blue-color;
+    }
+  }
+  
+  &::before,
+  &::after {
+    background: $white-color;
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+  }
+  
+  &::before {
+    transform: rotate(45deg);
+  }
+  
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
+/*
+ * mobile navigation close button
+ */
+.mobile-nav-open {
+  position: relative;
+  border-top: 4px solid $black-color;
+  border-bottom: 4px solid $black-color;
+  width: 32px;
+  height: 28px;
+  text-indent: -9999px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    background: $black-color;
+    margin-top: -2px;
+  }
+
+  @include breakpoint(large) {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+/**
+ * @file    : _print.scss
+ * @purpose : print styles
+ */
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
