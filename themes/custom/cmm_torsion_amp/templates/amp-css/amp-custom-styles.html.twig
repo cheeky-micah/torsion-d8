@@ -1,0 +1,79 @@
+/**
+ * {drupal} hidden styles
+ */
+.hidden {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+
+
+/**
+ * {amp} sidebar
+ */
+#sidebar {
+  width: 250px;
+  padding: 0;
+  background: #eee;
+  color: #444;
+  position: relative;
+  box-shadow: inset -4px 0px 11px -3px rgba(0,0,0,0.96);
+  }
+  #sidebar .close-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 218px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+  }
+  #sidebar h2 {
+    padding: 0 0 0 14px;
+    margin: 20px 0 10px 0;
+    color: #efefef;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  #sidebar ul {
+    margin: 0;
+    padding: 0;
+    }
+    #sidebar ul li {
+      margin: 0;
+      padding: 0;
+      }
+      #sidebar ul li ul {
+        display: none;
+      }
+      #sidebar ul li a {
+        margin: 0;
+        display: block;
+        padding: 8px 14px;
+        border-top: 1px solid #4f5f4e;
+        color: #444;
+        text-decoration: none;
+        font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+      }
